@@ -6,15 +6,17 @@ body{
     font-family: 'Inter', sans-serif;
 }
 main {
-    width: 50%;
+    width: 65%;
+
 }
 
 main .card-list {
+
     margin: 1em;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 main .card-list .card {
@@ -23,8 +25,8 @@ main .card-list .card {
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-    width: 18em;
-    height: 9em;
+    width: 256px;
+    height: 128px;
     box-shadow: 2px 0 8px 0px #66666640;
 }
 
@@ -40,7 +42,7 @@ main .card-list .card .card-body {
 
 main .card-list .card .no {
 
-    font-size: 5em;
+    font-size: 64px;
 
     font-weight: 700;
 }
@@ -58,4 +60,92 @@ main .card-list .card i {
     right: 0;
     top: 20%;
     transform: rotate(-25.1deg);
+}
+
+main .task-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em;
+
+}
+main .task-list .search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    height:55px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0 8px 0px #66666640;
+
+
+    border-radius: 14px;
+
+
+}
+main .task-list .search  i{
+    font-size: 24px;
+    color: #C8C8C8;
+}
+main .task-list .search input{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+}
+main .task-list .search input::placeholder{
+    color: #C8C8C8;
+}
+
+
+
+
+main .task-list .list .task {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0 8px 0px #66666640;
+    border-radius: 12px;
+    height: 80px;
+
+
+}
+main .task-list .list .task .check-box{
+    border-radius:50%;
+    padding: 0.3em;
+    font-size: 24px;
+    color: white;
+
+    background-color: #11A8E6;
+}
+main .task-list .list .task .task-body{
+    width: 90%;
+
+}
+
+main .task-list .list .task .task-body input{
+    outline: none;
+    border: 1px solid #11A8E6;
+    color: #11A8E6;;
+    border-radius: 4px;
+    font-size: 18px;
+
+}
+
+
+main .task-list .list .task input:disabled{
+    border:none;
+}
+
+
+main .task-list .list .task .task-body p{
+    font-size: 14px;
+    color: #434343BF;
 }
